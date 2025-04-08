@@ -2,7 +2,7 @@
 
 * Студент: [Лусине Беджанян](https://up.htmlacademy.ru/htmlcss-individual/2/user/2591655).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-* Проект: [Седона](https://github.com/lusine-21/2591655-sedona-2).
+* Сайт: [Проект Седона](https://lusine-21.github.io/2591655-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
