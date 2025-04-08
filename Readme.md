@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лусине Беджанян](https://up.htmlacademy.ru/htmlcss-individual/2/user/2591655).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
