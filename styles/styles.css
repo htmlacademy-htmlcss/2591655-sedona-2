@@ -14,25 +14,452 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
+html {
+  height: 100%;
 }
 
 body {
+  min-width: 1200px;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
 
-  font-size: 16px;
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-user-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  background: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-index {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead + p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#333333;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-item-wide {
+  background-color: #82B3D3;
+}
+
+.advantages-title-white {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description-white {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages-title-black {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description-black {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-item-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-dark {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.infrastructure-lead + p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#333333;
+  text-align: center;
+}
+
+.infrastructure-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.infrastructure-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: center;
+}
+
+.infrastructure-item-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.search-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.search-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subscribe-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  background: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subscribe-title + p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-email {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subscribe-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: #ffffff;
+}
+
+.footer-phone {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* catalog */
+
+.filters {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.catalog-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.range-slider-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-filter-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-filter-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-products-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.add-favorite-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.add-favorite-button-current {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #82b3d3;
+}
+
+.pagination-current {
+  color: #000000;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+
+.pagination-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.subscribe-catalog-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-catalog-title + p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
 }
