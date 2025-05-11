@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -19,9 +19,8 @@ html {
 }
 
 body {
-  min-width: 1200px;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -30,50 +29,71 @@ body {
   color: #333333;
 }
 
+.bttn {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+.bttn-brown {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+}
+
+.bttn-blue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82B3D3;
+}
+
+.bttn-green {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #7DB54F;
+}
+
+.bttn-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
   text-decoration: none;
-  text-transform: capitalize;
 }
 
 .navigation-user-link {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
   text-decoration: none;
-  text-transform: capitalize;
-}
-
-.header-button {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .hero {
   background: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -82,12 +102,18 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  background-color: #ffffff;
+  text-align: center;
+}
+
+.lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
 }
-
-.lead + p {
+.lead-subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -147,7 +173,7 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.infrastructure-lead + p {
+.infrastructure-lead-subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -195,18 +221,6 @@ body {
   text-align: center;
 }
 
-.search-button {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .subscribe-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -224,7 +238,7 @@ body {
   text-align: center;
 }
 
-.subscribe-title + p {
+.subscribe-subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -233,23 +247,14 @@ body {
 }
 
 .input-email {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-
-.subscribe-button {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #f2f2f2;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  border: none;
 }
 
 .page-footer {
@@ -257,7 +262,7 @@ body {
 }
 
 .footer-phone {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -305,41 +310,33 @@ body {
   color: #ffffff;
 }
 
+.prefix {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .range-slider-input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  border: none;
 }
 
-.catalog-filter-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.catalog-filter-reset {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background: none;
-  text-align: center;
-  text-transform: uppercase;
+.catalog-products{
+  background-color: #ffffff;
 }
 
 .catalog-products-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .select-control {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -370,39 +367,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.product-card-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.add-favorite-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.add-favorite-button-current {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #7DB54F;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .product-card-rating {
@@ -444,6 +408,10 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.subscribe-catalog {
+  background-color: #ffffff;
 }
 
 .subscribe-catalog-title {
