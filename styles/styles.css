@@ -1231,7 +1231,6 @@ body {
   background-image: url("../images/svg/icon-star.svg");
   background-repeat: space no-repeat;
   background-position: center;
-  background-size: contain;
 }
 
 .product-card-stars-2 {
@@ -1417,14 +1416,14 @@ body {
   position: relative;
 }
 
-.modal-input-control {
+.modal-input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
   width: 440px;
   height: 48px;
   padding: 12px 42px 12px 20px;
-  font-family: inherit;
-  font-size: inherit;
   line-height: 24px;
-  font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
   background-image: url("../images/svg/date.svg");
@@ -1434,68 +1433,62 @@ body {
   border-radius: 4px;
 }
 
-.modal-input-control::-webkit-input-placeholder {
+.modal-input::-webkit-input-placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.modal-input-control::-moz-placeholder {
+.modal-input::-moz-placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.modal-input-control:-ms-input-placeholder {
+.modal-input::-ms-input-placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.modal-input-control::-ms-input-placeholder {
+.modal-input::-ms-input-placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.modal-input-control::placeholder {
+.modal-input::placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.modal-input-control:hover {
+.modal-input:hover {
   background-color: #e5e5e5;
 }
 
-.modal-input-control:focus-visible {
+.modal-input:focus-visible {
   background-color: #e5e5e5;
   outline: 3px solid #83b3d3;
 }
 
 .auth-text {
-  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
   color: #000000;
 }
 
+.input-message {
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  top: 35px;
+  left: 0;
+  padding: 0 20px;
+}
+
 .message-error {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  padding: 0 20px;
   color: #ff5757;
-  font-size: 16px;
-  line-height: 21px;
 }
 
-.message-success {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  padding: 0 20px;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.population-control-wrapper {
+.modal-control-wrapper {
   display: flex;
 }
 
@@ -1511,7 +1504,7 @@ body {
   grid-column: 1/2;
 }
 
-.modal-form-data .population-control-wrapper:first-of-type {
+.modal-form-data .modal-control-wrapper:first-of-type {
   grid-column: 2/3;
 }
 
@@ -1521,20 +1514,20 @@ body {
   padding-right: 31px;
 }
 
-.modal-form-data .population-control-wrapper:last-of-type {
+.modal-form-data .modal-control-wrapper:last-of-type {
   grid-column: 4/5;
 }
 
 .quantity-input {
-  width: 30px;
-  height: 48px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
+  width: 30px;
+  height: 48px;
   line-height: 20px;
-  color: #000000;
   text-align: center;
   border: none;
+  color: #000000;
   background-color: #f2f2f2;
   -webkit-appearance: none;
   appearance: none;
@@ -1557,7 +1550,7 @@ body {
   margin: 0;
 }
 
-.bttn-quantity-left-wrap {
+.bttn-left-wrap {
   position: relative;
   width: 40px;
   height: 48px;
@@ -1568,7 +1561,7 @@ body {
   border-bottom-right-radius: 0;
 }
 
-.bttn-quantity-right-wrap {
+.bttn-right-wrap {
   position: relative;
   width: 40px;
   height: 48px;
@@ -1596,8 +1589,8 @@ body {
 
 .bttn-quantity::before,
 .bttn-quantity::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 9px;
   left: 3px;
   width: 14px;
@@ -1630,10 +1623,10 @@ body {
 }
 
 .bttn-big-modal {
-  grid-column: 1/-1;
-  padding: 18px;
   font-family: inherit;
   font-size: 20px;
+  grid-column: 1/-1;
+  padding: 18px;
   line-height: 24px;
   border: none;
   border-radius: 10px;
@@ -1663,25 +1656,25 @@ body {
 
 .tooltip-text {
   position: absolute;
+  display: none;
+  font-size: 16px;
   top: 100%;
   left: 50%;
-  display: none;
   width: 256px;
   padding: 18px 18px 23px 22px;
   margin-top: 14px;
-  font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  border-radius: 10px;
   background-color: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .tooltip-text::before {
-  content: "";
   position: absolute;
+  content: "";
   top: -9px;
   left: 50%;
   width: 19px;

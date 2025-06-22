@@ -214,33 +214,33 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form-data" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-control auth-text" for="date-start">
+            <label class="modal-control auth-text" for="date-arrival">
               Дата Заезда:
             </label>
             <div class="input-wrapper">
-              <input class="modal-input-control" id="date-start" type="text" name="date-start" value="27 апреля 2020"
+              <input class="modal-input" id="date-arrival" type="text" name="date-arrival" value="27 апреля 2020"
                 placeholder="Укажите дату" required>
-              <p class="message-error">Мы не можем отправить вас в прошлое.</p>
+              <p class="input-message message-error">Мы не можем отправить вас в прошлое.</p>
             </div>
-            <label class="modal-control auth-text" for="date-end">
+            <label class="modal-control auth-text" for="date-exit">
               Дата Выезда:
             </label>
             <div class="input-wrapper">
-              <input class="modal-input-control" id="date-end" type="text" name="date-end" value="1 сентября 2023"
+              <input class="modal-input" id="date-exit" type="text" name="date-exit" value="1 сентября 2023"
                 placeholder="Укажите дату" required>
-              <p class="message-success">На эти даты есть свободные номера. Пока есть.</p>
+              <p class="input-message">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <label class="adults auth-text" for="adults">
               Взрослые:
             </label>
-            <div class="population-control-wrapper">
-              <div class="bttn-quantity-left-wrap">
+            <div class="modal-control-wrapper">
+              <div class="bttn-left-wrap">
                 <button class="bttn-quantity bttn-reduce" type="button">
                   <span class="visually-hidden">Убавить</span>
                 </button>
               </div>
-              <input class="quantity-input" id="adults" name="adults" type="number" value="2">
-              <div class="bttn-quantity-right-wrap">
+              <input class="quantity-input" id="adults" name="adults" type="number" value="2" min="1">
+              <div class="bttn-right-wrap">
                 <button class="bttn-quantity bttn-increase" type="button">
                   <span class="visually-hidden">Добавить</span>
                 </button>
@@ -265,20 +265,20 @@
                 </span>
               </span>
             </span>
-            <div class="population-control-wrapper">
-              <div class="bttn-quantity-left-wrap">
+            <div class="modal-control-wrapper">
+              <div class="bttn-left-wrap">
                 <button class="bttn-quantity bttn-reduce" type="button">
                   <span class="visually-hidden">Убавить</span>
                 </button>
               </div>
-              <input class="quantity-input" id="children" name="children" type="number" value="2">
-              <div class="bttn-quantity-right-wrap">
+              <input class="quantity-input" id="children" name="children" type="number" value="2" min="0">
+              <div class="bttn-right-wrap">
                 <button class="bttn-quantity bttn-increase" type="button">
                   <span class="visually-hidden">Добавить</span>
                 </button>
               </div>
             </div>
-            <button class="bttn bttn-blue bttn-big-modal bttn-color-secondary" type="submit">Найти</button>
+            <button class="bttn bttn-blue bttn-big-modal" type="submit">Найти</button>
           </form>
         </section>
       </div>
