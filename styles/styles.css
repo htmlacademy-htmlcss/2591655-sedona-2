@@ -30,7 +30,7 @@ html {
   min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 15px 0 #00000033;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
 
@@ -84,6 +84,7 @@ body {
 .navigation-logo:hover {
   opacity: 0.8;
 }
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -415,7 +416,7 @@ body {
 }
 
 .advantages-item {
-  min-width: 400px;
+  width: 400px;
   min-height: 385px;
   flex-grow: 1;
 }
@@ -423,10 +424,6 @@ body {
 .advantages-item-special {
   display: flex;
   width: 100%;
-}
-
-.advantages-item-special .paragraph {
-  width: 400px;
 }
 
 .adv-item {
@@ -439,6 +436,7 @@ body {
 
 .advantages-item-special .paragraph {
   display: flex;
+  width: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1021,8 +1019,6 @@ body {
   border: none;
   background-color: #f2f2f2;
 
-  -webkit-appearance: none;
-  appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -1299,7 +1295,7 @@ body {
 }
 
 .pagination-link:not(.pagination-current):not(.pagination-text):active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-text {
@@ -1332,7 +1328,7 @@ body {
   padding: 64px 70px;
   border-radius: 30px;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.149);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   overflow: auto;
 }
 
@@ -1439,11 +1435,6 @@ body {
 }
 
 .modal-input::-moz-placeholder {
-  color: #000000;
-  opacity: 0.6;
-}
-
-.modal-input::-ms-input-placeholder {
   color: #000000;
   opacity: 0.6;
 }
