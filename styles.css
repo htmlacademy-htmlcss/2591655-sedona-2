@@ -656,7 +656,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 45px 70px 35px;
 }
 
@@ -732,8 +732,6 @@ body {
 }
 
 .htmlacademy-logo {
-  display: flex;
-  margin-top: 4px;
   fill: #000000;
   vertical-align: bottom;
 }
